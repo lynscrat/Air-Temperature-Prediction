@@ -30,7 +30,6 @@ Model 1 performed slightly better despite being simpler. The second model, thoug
 
 ### Analysis and Discussion
 Although the models were well-structured and trained correctly, their predictive power remained poor. The notebook’s conclusion highlights several reasons for this:
-- Feature limitations: The dataset contains only limited features related to temperature, providing little predictive signal beyond short-term autocorrelation.
 - Short training history: The available time window may not capture enough temporal diversity for the model to generalize.
 - Noise and stationarity issues: The air temperature data may exhibit non-stationary behavior or high noise levels, complicating the learning process.
 - Reconsider the target variable: because air temperature often contains strong trend and seasonal components, consider transforming the target to improve learnability and stability. Possible alternatives:
